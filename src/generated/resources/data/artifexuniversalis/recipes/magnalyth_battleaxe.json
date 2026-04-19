@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "artifex:standard_hilt"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XRX",
+    " R "
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_battleaxe"
+  },
+  "show_notification": true
+}

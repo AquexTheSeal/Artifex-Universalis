@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "artifex:standard_hilt"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    " X ",
+    "XRX",
+    " X "
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_buckler"
+  },
+  "show_notification": true
+}

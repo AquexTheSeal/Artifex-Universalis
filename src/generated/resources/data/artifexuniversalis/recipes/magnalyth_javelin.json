@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "artifex:standard_pole"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "P",
+    "X"
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_javelin"
+  },
+  "show_notification": true
+}

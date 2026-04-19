@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "P": {
+      "item": "artifex:standard_pole"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    "X",
+    "P"
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_spear"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/crossbow",
+  "textures": {
+    "layer0": "artifexuniversalis:item/magnalyth_crossbow_pulling_0"
+  }
+}

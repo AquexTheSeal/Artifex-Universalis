@@ -1,0 +1,6 @@
+{
+  "parent": "artifex:item/knuckles",
+  "textures": {
+    "0": "artifexuniversalis:item/magnalyth_knuckles"
+  }
+}

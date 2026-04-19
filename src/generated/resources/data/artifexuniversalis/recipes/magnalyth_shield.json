@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "tag": "forge:ingots/iron"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "XIX",
+    " X "
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_shield"
+  },
+  "show_notification": true
+}

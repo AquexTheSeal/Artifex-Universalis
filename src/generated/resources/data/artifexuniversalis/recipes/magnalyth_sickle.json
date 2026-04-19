@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "R": {
+      "item": "artifex:standard_hilt"
+    },
+    "X": {
+      "item": "behemoths:magnalyth_ingot"
+    }
+  },
+  "pattern": [
+    "XX",
+    " R"
+  ],
+  "result": {
+    "item": "artifexuniversalis:magnalyth_sickle"
+  },
+  "show_notification": true
+}
