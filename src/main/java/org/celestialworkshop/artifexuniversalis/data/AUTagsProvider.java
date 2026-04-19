@@ -1,4 +1,4 @@
-package org.celestialworkshop.artifex.datagen;
+package org.celestialworkshop.artifexuniversalis.data;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
@@ -10,7 +10,7 @@ import org.celestialworkshop.artifex.Artifex;
 import javax.annotation.Nullable;
 import java.util.concurrent.CompletableFuture;
 
-public class AFTagsProvider {
+public class AUTagsProvider {
 
     public static class ItemsProvider extends ItemTagsProvider {
         public ItemsProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, BlockTagsProvider blockTags, @Nullable ExistingFileHelper existingFileHelper) {
