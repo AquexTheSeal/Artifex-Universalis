@@ -18,4 +18,14 @@ public class BehemothsItems {
             })
             .build()
     );
+
+    public static final AFMaterial MORTYX_MATERIAL = ArtifexUniversalis.registerGeneralMaterial(
+            AFMaterial.builder(ITEMS, "mortyx")
+                    .tier(BMItemTiers.MORTYX)
+                    .specialties(config -> {
+                        config.add(BehemothsSpecialties.COLOSSUS_SLAYER, 1);
+                        config.add(BehemothsSpecialties.BANISHMENT_OF_THE_DEAD, 1);
+                    })
+                    .build()
+    );
 }

@@ -7,7 +7,6 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.TierSortingRegistry;
-import org.celestialworkshop.artifexuniversalis.AUTags;
 import org.celestialworkshop.artifexuniversalis.ArtifexUniversalis;
 
 import java.util.List;

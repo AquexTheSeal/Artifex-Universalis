@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:terminite_binder"
+  },
+  "base": {
+    "item": "artifex:iron_dagger"
+  },
+  "result": {
+    "item": "artifexuniversalis:terminite_dagger"
+  },
+  "template": {
+    "item": "betterend:terminite_upgrade_smithing_template"
+  }
+}

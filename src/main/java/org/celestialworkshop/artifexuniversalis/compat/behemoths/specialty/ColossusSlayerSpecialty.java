@@ -26,7 +26,7 @@ public class ColossusSlayerSpecialty extends AFSpecialty {
     }
 
     private float calculatePower(int specialityLevel) {
-        return 1.0F + (float)(specialityLevel + 1) * 0.2F;
+        return 1.0F + (float)(specialityLevel) * 0.2F;
     }
 
     @Override

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:aeternium_binder"
+  },
+  "base": {
+    "item": "artifex:diamond_scimitar"
+  },
+  "result": {
+    "item": "artifexuniversalis:aeternium_scimitar"
+  },
+  "template": {
+    "item": "betterend:aeternium_upgrade_smithing_template"
+  }
+}

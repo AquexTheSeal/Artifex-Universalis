@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": {
+      "item": "minecraft:crossbow"
+    },
+    "R": {
+      "item": "artifex:standard_hilt"
+    },
+    "T": {
+      "tag": "forge:string"
+    },
+    "X": {
+      "item": "behemoths:mortyx_ingot"
+    }
+  },
+  "pattern": [
+    "XCX",
+    "XTX",
+    " R "
+  ],
+  "result": {
+    "item": "artifexuniversalis:mortyx_arbalest"
+  },
+  "show_notification": true
+}

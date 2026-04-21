@@ -16,7 +16,7 @@ public class AUCreativeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ArtifexUniversalis.MODID);
 
     public static final RegistryObject<CreativeModeTab> ARTIFEX = CREATIVE_TABS.register("artifex_universalis", () -> CreativeModeTab.builder()
-            .title(Component.translatable("item_group." + ArtifexUniversalis.MODID + ".artifex_universalis"))
+            .title(Component.translatable("item_group." + ArtifexUniversalis.MODID + "." + ArtifexUniversalis.MODID))
             .icon(() -> new ItemStack(AFItems.GOLD_MATERIAL.getWeapon(AFWeaponType.WAR_DOOR)))
             .displayItems((params, output) -> {
                 ForgeRegistries.ITEMS.getEntries().stream()

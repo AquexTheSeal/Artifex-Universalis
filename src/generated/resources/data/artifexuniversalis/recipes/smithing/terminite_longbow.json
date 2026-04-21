@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:terminite_binder"
+  },
+  "base": {
+    "item": "artifex:iron_longbow"
+  },
+  "result": {
+    "item": "artifexuniversalis:terminite_longbow"
+  },
+  "template": {
+    "item": "betterend:terminite_upgrade_smithing_template"
+  }
+}

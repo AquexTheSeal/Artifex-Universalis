@@ -1,0 +1,6 @@
+{
+  "parent": "artifex:item/bow_long",
+  "textures": {
+    "layer0": "artifexuniversalis:item/mortyx_longbow_pulling_0"
+  }
+}

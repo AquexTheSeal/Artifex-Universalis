@@ -119,20 +119,18 @@ dependencies {
     implementation fg.deobf("curse.maven:artifex-1515507:${artifex_version}")
 
     // Supported Mods
-    implementation fg.deobf("curse.maven:behemoths-1454931:7643284")
+    implementation fg.deobf("curse.maven:behemoths-1454931:7875285")
     implementation fg.deobf("curse.maven:deeperdarker-659011:5906086")
     implementation fg.deobf("curse.maven:the-undergarden-379849:5182632")
 //    implementation fg.deobf("curse.maven:betternether-forge-1436171:7713601")
-//    implementation fg.deobf("curse.maven:betterend-forge-1435127:7800936")
-//    implementation fg.deobf("curse.maven:caverns-and-chasms-438005:7935118")
+    implementation fg.deobf("curse.maven:betterend-forge-1435127:7800936")
 
     // Supported Mods Libraries
-//    implementation fg.deobf("curse.maven:wunderlib-forge-1435097:7486522")
-//    implementation fg.deobf("curse.maven:bclib-forge-1435106:7800921")
-//    implementation fg.deobf("curse.maven:blueprint-382216:6408581")
+    runtimeOnly fg.deobf("curse.maven:wunderlib-forge-1435097:7486522")
+    runtimeOnly fg.deobf("curse.maven:bclib-forge-1435106:7800921")
 
     // Debugging / Visual Utilities
-    implementation fg.deobf("curse.maven:emi-580555:6420945")
+    implementation fg.deobf("curse.maven:jei-238222:7920915")
 
     implementation fg.deobf("curse.maven:blessfulled-1182590:${blessfulled_version}")
     implementation fg.deobf("curse.maven:better-combat-by-daedelus-639842:${better_combat_version}")

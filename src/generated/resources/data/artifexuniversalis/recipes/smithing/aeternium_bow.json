@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:aeternium_binder"
+  },
+  "base": {
+    "item": "artifex:diamond_bow"
+  },
+  "result": {
+    "item": "artifexuniversalis:aeternium_bow"
+  },
+  "template": {
+    "item": "betterend:aeternium_upgrade_smithing_template"
+  }
+}

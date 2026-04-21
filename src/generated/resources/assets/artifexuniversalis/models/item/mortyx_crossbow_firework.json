@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/crossbow",
+  "textures": {
+    "layer0": "artifexuniversalis:item/mortyx_crossbow_firework"
+  }
+}

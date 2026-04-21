@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:aeternium_binder"
+  },
+  "base": {
+    "item": "artifex:diamond_shield"
+  },
+  "result": {
+    "item": "artifexuniversalis:aeternium_shield"
+  },
+  "template": {
+    "item": "betterend:aeternium_upgrade_smithing_template"
+  }
+}

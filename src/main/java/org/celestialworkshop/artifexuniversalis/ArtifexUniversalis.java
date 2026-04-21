@@ -15,12 +15,13 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.celestialworkshop.artifex.api.AFMaterial;
 import org.celestialworkshop.artifex.datagen.compat.MaterialBetterCombatPropertiesProvider;
-import org.celestialworkshop.artifex.datagen.material.MaterialItemModelProvider;
 import org.celestialworkshop.artifex.datagen.material.MaterialRecipeProvider;
 import org.celestialworkshop.artifexuniversalis.compat.behemoths.BehemothsItems;
 import org.celestialworkshop.artifexuniversalis.compat.behemoths.BehemothsSpecialties;
+import org.celestialworkshop.artifexuniversalis.compat.betterend.BetterEndItems;
 import org.celestialworkshop.artifexuniversalis.compat.generic.GenericItems;
-import org.celestialworkshop.artifexuniversalis.data.AUTagsProvider;
+import org.celestialworkshop.artifexuniversalis.data.AUItemModelProvider;
+import org.celestialworkshop.artifexuniversalis.data.AULanguageProvider;
 import org.slf4j.Logger;
 
 import java.util.List;
@@ -33,7 +34,7 @@ public class ArtifexUniversalis {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     // Data Generation Purposes.
-    public static final List<AFMaterial> ALL_MATERIALS = new ObjectArrayList();
+    public static final List<AFMaterial> DATA_GENERATION_MATERIALS = new ObjectArrayList<>();
 
     public ArtifexUniversalis() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -48,6 +49,10 @@ public class ArtifexUniversalis {
             BehemothsSpecialties.SPECIALTIES.register(modEventBus);
         }
 
+        if (ModList.get().isLoaded("betterend")) {
+            BetterEndItems.ITEMS.register(modEventBus);
+        }
+
         modEventBus.addListener(this::onGatherData);
     }
 
@@ -56,25 +61,21 @@ public class ArtifexUniversalis {
     }
 
     public static AFMaterial registerGeneralMaterial(AFMaterial material) {
-        ALL_MATERIALS.add(material);
+        DATA_GENERATION_MATERIALS.add(material);
         return material;
     }
 
     public void onGatherData(GatherDataEvent event) {
-        LOGGER.info("Gathering data for Artifex Universalis");
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
         ExistingFileHelper efh = event.getExistingFileHelper();
 
-//        generator.addProvider(event.includeClient(), new AULanguageProvider(packOutput, "en_us"));
-        generator.addProvider(event.includeClient(), new MaterialItemModelProvider(packOutput, efh, MODID, ALL_MATERIALS));
+        generator.addProvider(event.includeClient(), new AULanguageProvider(packOutput, "en_us"));
+        generator.addProvider(event.includeClient(), new AUItemModelProvider(packOutput, efh)); // Extends MaterialItemModelProvider
 
-        AUTagsProvider.BlocksProvider blockTagsProvider = new AUTagsProvider.BlocksProvider(packOutput, lookupProvider, efh);
-        generator.addProvider(event.includeServer(), blockTagsProvider);
-        generator.addProvider(event.includeServer(), new AUTagsProvider.ItemsProvider(packOutput, lookupProvider, blockTagsProvider, efh));
-        generator.addProvider(event.includeServer(), new MaterialRecipeProvider(packOutput, MODID, ALL_MATERIALS));
-        generator.addProvider(event.includeServer(), new MaterialBetterCombatPropertiesProvider(packOutput, MODID, ALL_MATERIALS));
+        generator.addProvider(event.includeServer(), new MaterialRecipeProvider(packOutput, MODID, DATA_GENERATION_MATERIALS));
+        generator.addProvider(event.includeServer(), new MaterialBetterCombatPropertiesProvider(packOutput, MODID, DATA_GENERATION_MATERIALS));
 
     }
 }

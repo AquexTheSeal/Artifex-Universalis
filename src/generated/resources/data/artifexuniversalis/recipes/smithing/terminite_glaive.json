@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:terminite_binder"
+  },
+  "base": {
+    "item": "artifex:iron_glaive"
+  },
+  "result": {
+    "item": "artifexuniversalis:terminite_glaive"
+  },
+  "template": {
+    "item": "betterend:terminite_upgrade_smithing_template"
+  }
+}

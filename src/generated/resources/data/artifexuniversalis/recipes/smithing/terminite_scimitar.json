@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "artifexuniversalis:terminite_binder"
+  },
+  "base": {
+    "item": "artifex:iron_scimitar"
+  },
+  "result": {
+    "item": "artifexuniversalis:terminite_scimitar"
+  },
+  "template": {
+    "item": "betterend:terminite_upgrade_smithing_template"
+  }
+}
